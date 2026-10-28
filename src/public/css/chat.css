@@ -1,0 +1,89 @@
+#all-messages {
+  padding: 50px 25px;
+  background-color: #ffffff; /* Fondo blanco institucional */
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message .image-container {
+  width: 50px;
+  align-items: flex-start;
+}
+
+/* Avatar con la inicial del usuario (color generado a partir del nombre) */
+.message .avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #ffd700; /* Amarillo institucional */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message .message-body {
+  margin-left: 10px;
+  width: calc(100% - 50px);
+}
+
+.message .message-body .user-info {
+  font-weight: bold;
+  color: #006633; /* Verde institucional */
+}
+
+.message .message-body .user-info .time {
+  color: #b8860b; /* Amarillo institucional oscurecido para que se lea sobre blanco */
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+.message .message-body p {
+  margin-top: 5px;
+  color: #333333; /* Texto más legible sobre fondo blanco */
+  font-size: 14px;
+}
+
+.send-message {
+  background: #006633; /* Verde institucional */
+  padding: 10px;
+  display: flex;
+}
+
+.send-message input {
+  width: 100%;
+  padding: 7px 5px;
+  border: 1px solid #006633; /* Borde verde */
+  border-radius: 4px;
+  outline: none;
+}
+
+.send-message button {
+  margin-left: 10px;
+  background-color: #ffd700; /* Amarillo institucional */
+  color: #000000; /* Texto negro para contraste */
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-message button:hover {
+  background-color: #006633; /* Verde institucional al hover */
+  color: #ffffff; /* Texto blanco */
+}
+
+.system-notice {
+  text-align: center;
+  color: #777777;
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-style: italic;
+}

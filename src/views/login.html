@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Iniciar sesion - ESPEChat</title>
+  </head>
+  <body>
+    <header>
+      <h1>ESPEChat</h1>
+    </header>
+    <main>
+      <form class="card" id="form">
+        <div class="input-group">
+          <label for="username">Nombre de usuario</label>
+          <input type="text" id="username" autocomplete="username" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Contrasena</label>
+          <input type="password" id="password" autocomplete="current-password" required />
+        </div>
+        <p class="form-error" id="form-error"></p>
+        <div class="button-container">
+          <button type="submit" class="btn primary" id="submit">Entrar al chat</button>
+        </div>
+        <p class="form-link">
+          <a href="/register">Crear una cuenta nueva</a>
+        </p>
+      </form>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
